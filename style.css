@@ -52,6 +52,9 @@ input[type="number"] {
     color: rgb(134, 134, 134);
 }
 
+#output{
+    margin: 50px;
+}
 
 .btn{
     font-family: "Playwrite DE Grund", cursive;
