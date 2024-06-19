@@ -19,10 +19,7 @@ const handleInput = () => {
    }
 
    let message;
-   if (inputValue === 0) {
-      message = "Entered Number is Zero"
-   }
-   else if (inputValue % 2 === 0) {
+   if (inputValue % 2 === 0) {
       message = "Entered Number is Even"
    }
    else {
