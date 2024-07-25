@@ -1,26 +1,30 @@
 body {
-    background-image: url("bg1.jpg");
-    background-size: cover;
+    background: url("bg1.jpg") repeat center/cover;
+    height: 100vh;
+    width: 100vw;
     font-family: "Playwrite DE Grund", cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
+    padding: 1rem;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
+
 header{
-    margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 h1 {
     color: rgba(255, 255, 255, 0.493);
     margin-top: 0;
-    font-size: 100px;
+    margin-bottom: 0;
+    font-size: 5rem;
 }
 
 #title1 {
     color: rgba(0, 0, 0, 0.315);
-    margin-top: 0;
+    margin: 0;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -40,7 +44,7 @@ input[type="number"] {
     background-color: transparent;
     border: 4px, ridge, rgb(7, 36, 68);
     border-radius: 7px;
-    margin-top: 20px;
+    margin-top: 0;
     height: 45px;
     width: 300px;
     text-align: center;
@@ -53,7 +57,7 @@ input[type="number"] {
 }
 
 #output{
-    margin: 50px;
+    margin-top: 50px;
 }
 
 .btn{
@@ -70,4 +74,25 @@ input[type="number"] {
 
 .btn:hover {
     color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 550px){
+    body {
+        font-size: 1.3rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    #title1 {
+    }
+    
+    #userInput {
+        width: 250px;
+    }
+    
+    #output{
+        margin-top: 40px;
+    }
 }
